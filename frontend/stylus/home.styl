@@ -1,0 +1,139 @@
+@import 'nib'
+@import '1reset'
+
+*
+    font-family: 'Avenir Next'
+    
+#contact-form
+    
+    margin: 0 auto
+    width: 480px
+    display: block
+    
+    h1
+        color: #333333
+        font-weight: 600
+        font-size: 32px
+        
+    .separator
+        background-color: #51D3D4
+        width: 50px
+        display: block
+        height: 4.9px
+        margin-bottom: 20px
+        
+    .copy-text
+        font-size: 16px
+        font-weight: 300
+        margin-bottom: 20px
+        line-height: 24px
+        
+        span
+            color: #47BEC0
+            
+    .input-group
+        display: block
+        border: 1px solid #EAEAEA
+        border-radius: 6px
+        height: auto
+        margin-bottom: 15px
+        color: #ADADAD
+        
+        .input-field
+            display: table
+            border-bottom: 1px solid #EAEAEA
+            font-size: 16px
+            width: 100%
+            
+            .input-icon
+                display: table-cell
+                padding: 20px 5px 20px 20px
+                width: 1%
+                vertical-align: top
+                
+                .required
+                    color: red
+                i
+                    color: #ADADAD
+                    
+            .input-box
+                font-size: 16px
+                font-weight: 300
+                display: table-cell
+                width: 95%
+                padding: 20px 20px 20px 0
+                border: 0
+                resize: none
+                
+            .select
+                height: 100%
+                background: none
+                
+            .upload-box
+                font-size: 16px
+                font-weight: 300
+                line-height: 3.9
+                cursor: pointer
+                
+                span
+                    text-decoration: underline
+                
+                input[type=file]
+                    display: none
+                
+            &:last-child
+                border-bottom: none
+                
+            &:hover
+                border-bottom: 1px solid #4ED2D4
+                
+                i
+                    color: #4ED2D4
+                
+                &:last-child
+                    border-radius: 6px            
+                
+        #rating
+            position: relative
+            display: inline-block
+            width: 100%
+            margin-top: 10px
+            
+            #stars
+                color: #EAEAEA
+                margin: 0 auto
+
+            .counter
+                display: none
+                width: 40px
+                background: url('../images/ratingbg.png') center no-repeat
+                height: 33px
+                color: #fff
+                text-align: center
+                padding: 5px 0
+
+                position: absolute
+                z-index: 1
+                
+                bottom: 100%
+                left: 19.5%
+                
+                
+    .btn-submit
+            display: block
+            width: 100%
+            background-color: #4BD1D4
+            padding: 20px
+            border: 1px solid #4BD1D4
+            color: white
+            font-size: 16px
+            border-radius: 0 0 6px 6px
+            margin-bottom: 20px
+            transition: all 1s ease
+            
+            &:hover
+                background-color: #05BABE
+                
+    .bottom-no-border
+        border-radius: 6px 6px 0 0
+        margin-bottom: 0

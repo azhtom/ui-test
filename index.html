@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">        
+        <meta name="author" content="CHANGE-ME">
+        <meta name="description" content="CHANGE-ME">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="msapplication-tap-highlight" content="no">
+        
+        <meta name="theme-color" content="#000000">
+        
+        <link rel="shortcut icon" href="favicon.ico">
+        
+        <title>Contact Form</title>
+        
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='bower_components/rateYo/min/jquery.rateyo.min.css' rel='stylesheet' type='text/css'>
+        <link href='bower_components/font-awesome/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+        <link href='static/css/home.css' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+        </header>
+        
+        <!-- Sections -->
+        <section id="contact-form">
+            <h1>Contáctanos</h1>
+            <div class="separator"></div>
+            <div class="copy-text">
+                Te recomendamos que visites nuestro <span>blog</span> y te unas a nuestro grupo de <span>facebook</span> y <span>twitter</span>.
+            </div>
+            
+            <form>
+                <div class="input-group">
+                    <div class="input-field">
+                        <div class="input-icon">
+                            <i class="fa fa-envelope-o fa-fw"></i>
+                        </div>
+                        <input type="email" class="input-box" name="email" placeholder="Email" />
+                    </div>
+                    <div class="input-field">
+                        <div class="input-icon">
+                            <i class="fa fa-user fa-fw"></i>
+                        </div>
+                        <input type="text" class="input-box" name="name" placeholder="Nombre" />
+                    </div>
+                    <div class="input-field">
+                        <div class="input-icon">
+                            <i class="fa fa-bars fa-fw"></i>
+                        </div>
+                        <input type="text" class="input-box" name="subject" placeholder="Asunto" />
+                    </div>
+                    <div class="input-field">
+                        <div class="input-icon">
+                            <i class="fa fa fa-comment-o fa-fw"></i>
+                        </div>
+                        <textarea class="input-box" name="description" placeholder="Descripción" ></textarea>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <div class="input-field">
+                        <div class="input-icon">
+                            <i class="fa fa-star fa-fw"></i>
+                        </div>
+                        <div class="input-box">
+                            <span class="input-label">¿Cómo fue tu experiencia con Cabify?</span>
+                            <div id="rating">
+                                <div class="counter"></div>
+                                <div id="stars"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="input-group bottom-no-border">
+                    <div class="input-field">
+                        <div class="input-icon">
+                            <i class="fa fa-flag fa-fw"></i>
+                        </div>
+                        <select class="input-box select">
+                            <option>El país</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <div class="input-icon">
+                            <i class="fa fa-users fa-fw"></i>
+                        </div>
+                        <select class="input-box select">
+                            <option>Departamento</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <div class="input-icon">
+                            <i class="fa fa-file-archive-o fa-fw"></i>
+                        </div>
+                        <div class="upload-box">
+                            <input type="file" />
+                            <div>
+                                <span>Agregue un archivo</span> o coloque archivos aquí
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-submit">Envía tu pregunta</button>
+                
+            </form>
+            
+        </section>
+        
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="bower_components/rateYo/min/jquery.rateyo.min.js"></script>
+        <script src="static/javascript/home.js"></script>
+    </body>
+</html>
