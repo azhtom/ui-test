@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <meta charset="utf-8">        
+        <meta charset="utf-8">
         <meta name="author" content="CHANGE-ME">
         <meta name="description" content="CHANGE-ME">
-        
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="msapplication-tap-highlight" content="no">
-        
+
         <meta name="theme-color" content="#000000">
-        
+
         <link rel="shortcut icon" href="favicon.ico">
-        
+
         <title>Contact Form</title>
-        
+
         <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link href='bower_components/rateYo/min/jquery.rateyo.min.css' rel='stylesheet' type='text/css'>
         <link href='bower_components/font-awesome/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
         <link href='static/css/home.css' rel='stylesheet' type='text/css'>
     </head>
 
-    <body>
-        
+    <body class="contact-body">
+
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
             <symbol id="icon-email" viewBox="13 17 23 22">
                 <rect id="Rectangle-322" stroke="none" fill="#FFAB3B" fill-rule="evenodd" x="32" y="17" width="4" height="4" rx="2"></rect>
@@ -30,35 +30,35 @@
                     <path d="M16.6666667,3.33333333 L3.33333333,3.33333333 C2.41666667,3.33333333 1.675,4.08333333 1.675,5 L1.66666667,15 C1.66666667,15.9166667 2.41666667,16.6666667 3.33333333,16.6666667 L16.6666667,16.6666667 C17.5833333,16.6666667 18.3333333,15.9166667 18.3333333,15 L18.3333333,5 C18.3333333,4.08333333 17.5833333,3.33333333 16.6666667,3.33333333 L16.6666667,3.33333333 Z M16.6666667,15 L3.33333333,15 L3.33333333,6.66666667 L10,10.8333333 L16.6666667,6.66666667 L16.6666667,15 L16.6666667,15 Z M10,9.16666667 L3.33333333,5 L16.6666667,5 L10,9.16666667 L10,9.16666667 Z" ></path>
                 </g>
             </symbol>
-            
+
             <symbol id="icon-user" viewBox="7 328 19 18" >
                 <rect id="Rectangle-322" stroke="none" fill="#FFAB3B" fill-rule="evenodd" x="22" y="328" width="4" height="4" rx="2"></rect>
                 <path d="M13.9200001,337.931429 C15.5610287,337.931429 16.8758287,336.606743 16.8758287,334.965714 C16.8758287,333.324686 15.5610287,332 13.9200001,332 C12.2789715,332 10.9542858,333.324686 10.9542858,334.965714 C10.9542858,336.606743 12.2789715,337.931429 13.9200001,337.931429 L13.9200001,337.931429 Z M13.9200001,339.908572 C11.6166286,339.908572 7,341.0652 7,343.368572 L7,345.84 L20.8400002,345.84 L20.8400002,343.368572 C20.8400002,341.0652 16.2233715,339.908572 13.9200001,339.908572 L13.9200001,339.908572 Z" opacity="0.5" ></path>
             </symbol>
-            
+
             <symbol id="icon-subject" viewBox="18 17 18 15">
                 <rect id="Rectangle-322" stroke="none" fill="#FFAB3B" fill-rule="evenodd" x="32" y="17" width="4" height="4" rx="2"></rect>
                 <path d="M18,24 L33,24 L33,27 L18,27 L18,24 Z M18,29 L30,29 L30,32 L18,32 L18,29 Z" opacity="0.5" ></path>
             </symbol>
-            
+
             <symbol id="icon-star" viewBox="20 589 16 16">
                 <polygon points="28 601 23.297718 603.472136 24.1957739 598.236068 20.3915479 594.527864 25.648859 593.763932 28 589 30.351141 593.763932 35.6084521 594.527864 31.8042261 598.236068 32.702282 603.472136" opacity="0.5"></polygon>
             </symbol>
-            
+
             <symbol id="icon-flag" viewBox="85 744 13 12" opacity="0.5">
                 <g transform="translate(85.000000, 744.000000)">
                     <path d="M2,7 C2,7 2.56818844,6.12621431 3.52295399,5.68718814 C3.73142868,5.59132602 3.96204756,5.51151081 4.21454151,5.4593207 C5.01931021,5.29297628 6.0463023,5.40726839 7.28680443,6.17708496 C10.6989748,8.29457047 12.145386,5.30367024 12.145386,5.30367024 L12.1453858,1.60944741 L12.1453857,0 C12.1453857,0 10.0015869,2.62173617 6.7241211,0.738672416 C3.44665528,-1.14439134 2,1.81230683 2,1.81230683 L2,7 Z"></path>
                     <rect id="Rectangle-2" x="0" y="0" width="1.39999998" height="11.5" rx="0.699999988"></rect>
                 </g>
             </symbol>
-            
+
             <symbol id="icon-team" viewBox="17 17 19 17">
                 <rect id="Rectangle-322" stroke="none" fill="#FFAB3B" fill-rule="evenodd" x="32" y="17" width="4" height="4" rx="2"></rect>
                 <g fill-rule="evenodd" transform="translate(17.000000, 22.000000)">
                     <path d="M12.2727273,4.90909091 C13.6309091,4.90909091 14.7190909,3.81272727 14.7190909,2.45454545 C14.7190909,1.09636364 13.6309091,0 12.2727273,0 C10.9145455,0 9.81818182,1.09636364 9.81818182,2.45454545 C9.81818182,3.81272727 10.9145455,4.90909091 12.2727273,4.90909091 L12.2727273,4.90909091 Z M5.72727273,4.90909091 C7.08545455,4.90909091 8.17363636,3.81272727 8.17363636,2.45454545 C8.17363636,1.09636364 7.08545455,0 5.72727273,0 C4.36909091,0 3.27272727,1.09636364 3.27272727,2.45454545 C3.27272727,3.81272727 4.36909091,4.90909091 5.72727273,4.90909091 L5.72727273,4.90909091 Z M5.72727273,6.54545455 C3.82090909,6.54545455 0,7.50272727 0,9.40909091 L0,11.4545455 L11.4545455,11.4545455 L11.4545455,9.40909091 C11.4545455,7.50272727 7.63363636,6.54545455 5.72727273,6.54545455 L5.72727273,6.54545455 Z M12.2727273,6.54545455 C12.0354545,6.54545455 11.7654545,6.56181818 11.4790909,6.58636364 C12.4281818,7.27363636 13.0909091,8.19818182 13.0909091,9.40909091 L13.0909091,11.4545455 L18,11.4545455 L18,9.40909091 C18,7.50272727 14.1790909,6.54545455 12.2727273,6.54545455 L12.2727273,6.54545455 Z" opacity="0.5"></path>
                 </g>
             </symbol>
-            
+
             <symbol id="icon-attach" viewBox="0 0 30.58 30.58">
                 <path d="M28.692,3.179c-1.892-1.892-4.867-3.428-8.295,0L6.5,17.075c-0.107,0.096-1.386,1.297-1.431,3.039
                 c-0.028,1.076,0.413,2.079,1.313,2.979c0.768,0.768,1.687,1.167,2.655,1.155c1.754-0.021,3.062-1.343,3.204-1.493l10.455-10.454
@@ -70,7 +70,7 @@
                 c1.478,1.477,3.139,2.217,4.937,2.2c3.198-0.028,5.608-2.491,5.709-2.596l15.574-15.4c0.044-0.039,1.832-1.686,1.891-4.064
                 C30.616,5.879,29.981,4.467,28.692,3.179z" opaticy="0.5"/>
             </symbol>
-            
+
             <symbol id="icon-comment" viewBox="98 457 19 15">
                 <rect id="Rectangle-322" stroke="none" fill="#FFAB3B" fill-rule="evenodd" x="113" y="457" width="4" height="4" rx="2"></rect>
                 <g transform="translate(98.000000, 460.000000)" opacity="0.5">
@@ -85,7 +85,7 @@
         <!-- Header -->
         <header>
         </header>
-        
+
         <!-- Sections -->
         <section id="contact-form">
             <h1>Contáctanos</h1>
@@ -93,105 +93,149 @@
             <div class="copy-text">
                 Te recomendamos que visites nuestro <span>blog</span> y te unas a nuestro grupo de <span>facebook</span> y <span>twitter</span>.
             </div>
-            
-            <form>
+
+            <form class='contact-form'>
                 <div class="input-group">
                     <div class="input-field">
-                        <div class="input-icon">
-                            <svg class="icon">
-                              <use xlink:href="#icon-email" />
-                            </svg>
+                        <div class="field">
+                            <div class="input-icon">
+                                <svg class="icon icon-20">
+                                  <use xlink:href="#icon-email" />
+                                </svg>
+                            </div>
+                            <input type="email" class="input-box" name="email" placeholder="Email" />
                         </div>
-                        <input type="email" class="input-box" name="email" placeholder="Email" />
+                        <div class="error-box">
+                            <span class="triangle"></span>
+                            <span class="message">Por favor ingresa un email valido.</span>
+                        </div>
+                        <span class='ofocus'></span>
                     </div>
                     <div class="input-field">
-                        <div class="input-icon">
-                            <svg class="icon">
-                              <use xlink:href="#icon-user" />
-                            </svg>
+                        <div class="field">
+                            <div class="input-icon">
+                                <svg class="icon">
+                                  <use xlink:href="#icon-user" />
+                                </svg>
+                            </div>
+                            <input type="text" class="input-box" name="name" placeholder="Nombre" />
                         </div>
-                        <input type="text" class="input-box" name="name" placeholder="Nombre" />
+                        <div class="error-box">
+                            <span class="triangle"></span>
+                            <span class="message">Por favor ingresa un nombre valido.</span>
+                        </div>
+                        <span class='ofocus'></span>
                     </div>
                     <div class="input-field">
-                        <div class="input-icon">
-                            <svg class="icon">
-                              <use xlink:href="#icon-subject" />
-                            </svg>
+                        <div class="field">
+                            <div class="input-icon">
+                                <svg class="icon">
+                                  <use xlink:href="#icon-subject" />
+                                </svg>
+                            </div>
+                            <input type="text" class="input-box" name="subject" placeholder="Asunto" />
                         </div>
-                        <input type="text" class="input-box" name="subject" placeholder="Asunto" />
+                        <div class="error-box">
+                            <span class="triangle"></span>
+                            <span class="message">Por favor ingresa un asunto</span>
+                        </div>
+                        <span class='ofocus'></span>
                     </div>
                     <div class="input-field">
-                        <div class="input-icon">
-                            <svg class="icon">
-                              <use xlink:href="#icon-comment" />
-                            </svg>
+                        <div class="field">
+                            <div class="input-icon">
+                                <svg class="icon">
+                                  <use xlink:href="#icon-comment" />
+                                </svg>
+                            </div>
+                            <textarea class="input-box" name="description" placeholder="Descripción" ></textarea>
                         </div>
-                        <textarea class="input-box" name="description" placeholder="Descripción" ></textarea>
+                        <div class="error-box">
+                            <span class="triangle"></span>
+                            <span class="message">Por favor ingresa una descripción</span>
+                        </div>
+                        <span class='ofocus bord-rad-bottom'></span>
                     </div>
                 </div>
-                
+
                 <div class="input-group">
                     <div class="input-field">
-                        <div class="input-icon">
-                            <svg class="icon">
-                              <use xlink:href="#icon-star" />
-                            </svg>
-                        </div>
-                        <div class="input-box">
-                            <span class="input-label">¿Cómo fue tu experiencia con Cabify?</span>
-                            <div id="rating">
-                                <div class="counter"></div>
-                                <div id="stars"></div>
+                        <div class="field">
+                            <div class="input-icon">
+                                <svg class="icon">
+                                  <use xlink:href="#icon-star" />
+                                </svg>
+                            </div>
+                            <div class="input-box">
+                                <span class="input-label">¿Cómo fue tu experiencia con Cabify?</span>
+                                <div id="rating">
+                                    <div class="counter"></div>
+                                    <div id="stars"></div>
+                                </div>
                             </div>
                         </div>
+                        <span class='ofocus bord-rad-bottom'></span>
                     </div>
                 </div>
-                
+
                 <div class="input-group bottom-no-border">
                     <div class="input-field">
-                        <div class="input-icon">
-                            <svg class="icon">
-                              <use xlink:href="#icon-flag" />
-                            </svg>
+                        <div class="field">
+                            <div class="input-icon">
+                                <svg class="icon icon-12">
+                                  <use xlink:href="#icon-flag" />
+                                </svg>
+                            </div>
+                            <select class="input-box select">
+                                <option>El país</option>
+                            </select>
                         </div>
-                        <select class="input-box select">
-                            <option>El país</option>
-                        </select>
+                        <span class='ofocus'></span>
                     </div>
                     <div class="input-field">
-                        <div class="input-icon">
-                            <svg class="icon">
-                              <use xlink:href="#icon-team" />
-                            </svg>
+                        <div class="field">
+                            <div class="input-icon">
+                                <svg class="icon">
+                                  <use xlink:href="#icon-team" />
+                                </svg>
+                            </div>
+                            <select class="input-box select">
+                                <option>Departamento</option>
+                            </select>
                         </div>
-                        <select class="input-box select">
-                            <option>Departamento</option>
-                        </select>
+                        <div class="error-box">
+                            <span class="triangle"></span>
+                            <span class="message">Mensaje de error</span>
+                        </div>
+                        <span class='ofocus'></span>
                     </div>
                     <div class="input-field">
-                        <div class="input-icon">
-                            <svg class="icon">
-                              <use xlink:href="#icon-attach" />
-                            </svg>
-                        </div>
-                        <div class="upload-box">
-                            <input type="file" />
-                            <div>
-                                <span>Agregue un archivo</span> o coloque archivos aquí
+                        <div class="field">
+                            <div class="input-icon">
+                                <svg class="icon">
+                                  <use xlink:href="#icon-attach" />
+                                </svg>
+                            </div>
+                            <div class="upload-box">
+                                <input type="file" />
+                                <div>
+                                    <span>Agregue un archivo</span> o coloque archivos aquí
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <button class="btn-submit">Envía tu pregunta</button>
-                
+
             </form>
-            
+
         </section>
-        
+
         <!-- Scripts -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="bower_components/rateYo/min/jquery.rateyo.min.js"></script>
+        <script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
         <script src="static/javascript/home.js"></script>
     </body>
 </html>
