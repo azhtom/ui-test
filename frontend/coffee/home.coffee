@@ -14,7 +14,6 @@ ratingWidget = (->
         dom.counter = $(st.counter)
         return
     suscribeEvents = ->
-        #dom.btnOpen.on 'click', events.getMenu
         dom.stars.rateYo 'option', 'onChange', events.onChange
         return
     events =
@@ -78,6 +77,7 @@ contactForm = (->
             dom.form.validate(
                 errorElement: 'p'
                 errorPlacement: events.errorPlacement
+                onfocusout: events.onfocusOut
                 rules: (
                     email: (
                         required: true
@@ -86,11 +86,24 @@ contactForm = (->
                     name: (
                         required: true
                     )
+                    subject: (
+                        required: true
+                    )
+                    description: (
+                        required: true
+                    )
+                    team: (
+                        required: true
+                    )
                 )
             )
+        onfocusOut: (element) ->
+            if this.element(element)
+                $(element).parent().parent().removeClass('input-field-error')
+                $(element).parent().parent().find('.error-box').fadeOut('fast')
         errorPlacement: (error, element) ->
             $(element).parent().parent().addClass('input-field-error')
-            $(element).parent().parent().find('.error-box').show()
+            $(element).parent().parent().find('.error-box').fadeIn('slow')
         submitHandler: () ->
             console.log 'submit'
 

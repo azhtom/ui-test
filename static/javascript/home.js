@@ -85,6 +85,7 @@
         return dom.form.validate({
           errorElement: 'p',
           errorPlacement: events.errorPlacement,
+          onfocusout: events.onfocusOut,
           rules: {
             email: {
               required: true,
@@ -92,13 +93,28 @@
             },
             name: {
               required: true
+            },
+            subject: {
+              required: true
+            },
+            description: {
+              required: true
+            },
+            team: {
+              required: true
             }
           }
         });
       },
+      onfocusOut: function(element) {
+        if (this.element(element)) {
+          $(element).parent().parent().removeClass('input-field-error');
+          return $(element).parent().parent().find('.error-box').fadeOut('fast');
+        }
+      },
       errorPlacement: function(error, element) {
         $(element).parent().parent().addClass('input-field-error');
-        return $(element).parent().parent().find('.error-box').show();
+        return $(element).parent().parent().find('.error-box').fadeIn('slow');
       },
       submitHandler: function() {
         return console.log('submit');
