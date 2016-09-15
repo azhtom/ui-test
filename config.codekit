@@ -1950,11 +1950,20 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/frontend\/coffee\/home.coffee",
 		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/static\/javascript\/home.js",
+		"outputAbbreviatedPath": "\/frontend\/coffee\/home.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
+		},
+	"\/frontend\/css\/home.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/frontend\/css\/home.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/frontend\/stylus\/1reset.styl": {
 		"createSourceMap": 0,
@@ -1964,7 +1973,7 @@
 		"ignoreWasSetByUser": 0,
 		"importCSS": 0,
 		"inputAbbreviatedPath": "\/frontend\/stylus\/1reset.styl",
-		"outputAbbreviatedPath": "\/static\/css\/1reset.css",
+		"outputAbbreviatedPath": "\/frontend\/css\/1reset.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1980,7 +1989,7 @@
 		"ignoreWasSetByUser": 0,
 		"importCSS": 0,
 		"inputAbbreviatedPath": "\/frontend\/stylus\/home.styl",
-		"outputAbbreviatedPath": "\/static\/css\/home.css",
+		"outputAbbreviatedPath": "\/frontend\/css\/home.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -2014,6 +2023,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/static\/images\/icons\/Bitmap.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 347,
+		"inputAbbreviatedPath": "\/static\/images\/icons\/Bitmap.png",
+		"outputAbbreviatedPath": "\/static\/images\/icons\/Bitmap.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/static\/images\/ratingbg.png": {
 		"fileType": 32768,
@@ -2058,10 +2078,10 @@
 	"browserRefreshDelay": 0,
 	"coffeeAutoOutputPathEnabled": 1,
 	"coffeeAutoOutputPathFilenamePattern": "*.js",
-	"coffeeAutoOutputPathRelativePath": "\/static\/javascript",
+	"coffeeAutoOutputPathRelativePath": "",
 	"coffeeAutoOutputPathReplace1": "",
 	"coffeeAutoOutputPathReplace2": "",
-	"coffeeAutoOutputPathStyle": 1,
+	"coffeeAutoOutputPathStyle": 0,
 	"coffeeCreateSourceMap": 0,
 	"coffeeLintFlags2": {
 		"arrow_spacing": {
@@ -2093,7 +2113,7 @@
 			"flagValue": -1
 			},
 		"indentation": {
-			"active": 0,
+			"active": 1,
 			"flagValue": 2
 			},
 		"line_endings": {
@@ -2661,10 +2681,10 @@
 	"slimRailsCompatible": 0,
 	"stylusAutoOutputPathEnabled": 1,
 	"stylusAutoOutputPathFilenamePattern": "*.css",
-	"stylusAutoOutputPathRelativePath": "\/static\/css",
+	"stylusAutoOutputPathRelativePath": "..\/css",
 	"stylusAutoOutputPathReplace1": "stylus",
 	"stylusAutoOutputPathReplace2": "css",
-	"stylusAutoOutputPathStyle": 1,
+	"stylusAutoOutputPathStyle": 2,
 	"stylusCreateSourceMap": 0,
 	"stylusDebugStyle": 0,
 	"stylusImportCSS": 0,

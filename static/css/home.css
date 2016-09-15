@@ -574,6 +574,19 @@ p {
   width: 1%;
   vertical-align: top;
 }
+#contact-form .input-group .input-field .input-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: #adadad;
+}
+#contact-form .input-group .input-field .input-icon svg.h13px {
+  width: 13.84px;
+  height: 13.84px;
+}
+#contact-form .input-group .input-field .input-icon svg.h8px {
+  width: 15px;
+  height: 8px;
+}
 #contact-form .input-group .input-field .input-icon .required {
   color: #f00;
 }
@@ -611,8 +624,8 @@ p {
 #contact-form .input-group .input-field:hover {
   border-bottom: 1px solid #4ed2d4;
 }
-#contact-form .input-group .input-field:hover i {
-  color: #4ed2d4;
+#contact-form .input-group .input-field:hover .input-icon svg {
+  fill: #4ed2d4;
 }
 #contact-form .input-group .input-field:hover:last-child {
   -webkit-border-radius: 6px;
