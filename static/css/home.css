@@ -566,6 +566,28 @@ p {
 #contact-form .copy-text span {
   color: #47bec0;
 }
+#contact-form .info-text {
+  display: table;
+  width: 100%;
+  color: #adadad;
+  margin-bottom: 20px;
+}
+#contact-form .info-text .left {
+  font-size: 12px;
+  font-weight: 400;
+  display: table-cell;
+  width: 50%;
+}
+#contact-form .info-text .right {
+  font-size: 13px;
+  font-weight: 300;
+  display: table-cell;
+  width: 50%;
+  text-align: right;
+}
+#contact-form .info-text .right image {
+  vertical-align: middle;
+}
 #contact-form .input-group {
   display: block;
   border: 1px solid #eaeaea;
