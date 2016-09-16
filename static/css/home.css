@@ -639,10 +639,10 @@ p {
 }
 #contact-form .input-group .input-field .field .select {
   height: 100%;
-  background: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background: transparent url("../images/icons/icon_arrow.png") no-repeat right center;
 }
 #contact-form .input-group .input-field .field .upload-box {
   font-size: 16px;
@@ -655,6 +655,13 @@ p {
 }
 #contact-form .input-group .input-field .field .upload-box input[type=file] {
   display: none;
+}
+#contact-form .input-group .input-field .field .counter {
+  display: block;
+  width: 98%;
+  font-weight: 300;
+  text-align: right;
+  font-size: 14px;
 }
 #contact-form .input-group .input-field .field:hover .input-icon .icon {
   fill: #4ed2d4;
@@ -679,16 +686,18 @@ p {
   fill: #ff524f;
 }
 #contact-form .input-group #rating {
-  position: relative;
-  display: inline-block;
+  display: block;
   width: 100%;
   margin-top: 10px;
 }
-#contact-form .input-group #rating #stars {
-  color: #eaeaea;
+#contact-form .input-group #rating .counter-box {
+  position: relative;
+  display: block;
+  width: 240px;
+  height: 0px;
   margin: 0 auto;
 }
-#contact-form .input-group #rating .counter {
+#contact-form .input-group #rating .counter-box .counter {
   display: none;
   width: 40px;
   background: url("../images/ratingbg.png") center no-repeat;
@@ -699,7 +708,10 @@ p {
   position: absolute;
   z-index: 1;
   bottom: 100%;
-  left: 19.5%;
+}
+#contact-form .input-group #rating #stars {
+  color: #eaeaea;
+  margin: 0 auto;
 }
 #contact-form .btn-submit {
   display: block;

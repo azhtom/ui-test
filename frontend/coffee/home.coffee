@@ -28,26 +28,26 @@ ratingWidget = (->
         onChange: (rating, rateYoInstance) ->
             rating_tool_tip = null
             if rating > 0
-                $(this).prev().text(rating)
-                $(this).prev().show()
+                $(this).prev().find('.counter').text(rating)
+                $(this).prev().find('.counter').show()
 
-                posleft = 19.5
+                posleft = 0
 
                 if rating > 4
-                    posleft = 45 + 25.2
+                    posleft = 199
                 else if rating > 3
-                    posleft = 45 + 12.3
+                    posleft = 149
                 else if rating > 2
-                    posleft = 45
+                    posleft = 99
                 else if rating > 1
-                    posleft = 45 - 13
+                    posleft = 49
 
                 clearTimeout(rating_tool_tip)
-                $(this).prev().css({left: posleft + '%' })
+                $(this).prev().find('.counter').css({left: posleft + 'px' })
 
                 rating_tool_tip = setTimeout ->
                         dom.counter.fadeOut()
-                    , 2000
+                    , 2500
 
     initialize = (opts) ->
         st = $.extend({}, defaults, opts)
@@ -71,6 +71,7 @@ contactForm = (->
         dom.form = $(st.form)
         return
     suscribeEvents = ->
+        dom.form.on 'keyup', 'textarea', events.counterDescription
         return
     events =
         initValidation: () ->
@@ -106,6 +107,13 @@ contactForm = (->
             $(element).parent().parent().find('.error-box').fadeIn('slow')
         submitHandler: () ->
             console.log 'submit'
+        counterDescription: () ->
+            total = (300 - $(this).val().length)
+            if total >= 0
+                $(this).parent().find('.counter').text("Faltan " + total + " caracteres")
+            else
+                $(this).val($(this).val().substring(0, 300))
+
 
     initialize = (opts) ->
         st = $.extend({}, defaults, opts)

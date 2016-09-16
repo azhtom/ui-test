@@ -32,25 +32,25 @@
         var posleft, rating_tool_tip;
         rating_tool_tip = null;
         if (rating > 0) {
-          $(this).prev().text(rating);
-          $(this).prev().show();
-          posleft = 19.5;
+          $(this).prev().find('.counter').text(rating);
+          $(this).prev().find('.counter').show();
+          posleft = 0;
           if (rating > 4) {
-            posleft = 45 + 25.2;
+            posleft = 199;
           } else if (rating > 3) {
-            posleft = 45 + 12.3;
+            posleft = 149;
           } else if (rating > 2) {
-            posleft = 45;
+            posleft = 99;
           } else if (rating > 1) {
-            posleft = 45 - 13;
+            posleft = 49;
           }
           clearTimeout(rating_tool_tip);
-          $(this).prev().css({
-            left: posleft + '%'
+          $(this).prev().find('.counter').css({
+            left: posleft + 'px'
           });
           return rating_tool_tip = setTimeout(function() {
             return dom.counter.fadeOut();
-          }, 2000);
+          }, 2500);
         }
       }
     };
@@ -79,7 +79,9 @@
       dom.body = $(st.body);
       dom.form = $(st.form);
     };
-    suscribeEvents = function() {};
+    suscribeEvents = function() {
+      dom.form.on('keyup', 'textarea', events.counterDescription);
+    };
     events = {
       initValidation: function() {
         return dom.form.validate({
@@ -118,6 +120,15 @@
       },
       submitHandler: function() {
         return console.log('submit');
+      },
+      counterDescription: function() {
+        var total;
+        total = 300 - $(this).val().length;
+        if (total >= 0) {
+          return $(this).parent().find('.counter').text("Faltan " + total + " caracteres");
+        } else {
+          return $(this).val($(this).val().substring(0, 300));
+        }
       }
     };
     initialize = function(opts) {

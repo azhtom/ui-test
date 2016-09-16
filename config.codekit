@@ -3386,6 +3386,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/static\/images\/icons\/icon_arrow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 204,
+		"inputAbbreviatedPath": "\/static\/images\/icons\/icon_arrow.png",
+		"outputAbbreviatedPath": "\/static\/images\/icons\/icon_arrow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/static\/images\/ratingbg.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3396,17 +3407,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
-		},
-	"\/static\/javascript\/home.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/static\/javascript\/home.js",
-		"outputAbbreviatedPath": "\/static\/javascript\/min\/home-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
 		}
 	},
 "hooks": [
