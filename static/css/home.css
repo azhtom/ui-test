@@ -524,8 +524,11 @@ p {
   .grabbing {
       cursor:url(grabbing.png) 8 8, move;
   }
+html {
+  font-family: sans-serif;
+}
 * {
-  font-family: 'Avenir Next';
+  font-family: 'Avenir Next', sans-serif;
 }
 .contact-body {
   margin: 0 10px 20px 10px;
@@ -558,8 +561,9 @@ p {
   margin-bottom: 20px;
 }
 #contact-form .copy-text {
+  color: #717171;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   margin-bottom: 20px;
   line-height: 24px;
 }
