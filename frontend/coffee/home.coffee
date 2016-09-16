@@ -69,6 +69,7 @@ contactForm = (->
         filebox: '.contact-form #fdrag'
         fileinput: '.contact-form input[type=file]'
         filelist: '.contact-form .upload-box .file-list'
+        fileitem: '.contact-form .upload-box .file-list '
     catchDom = (st) ->
         dom.body = $(st.body)
         dom.form = $(st.form)

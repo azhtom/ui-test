@@ -76,7 +76,8 @@
       form: '.contact-form',
       filebox: '.contact-form #fdrag',
       fileinput: '.contact-form input[type=file]',
-      filelist: '.contact-form .upload-box .file-list'
+      filelist: '.contact-form .upload-box .file-list',
+      fileitem: '.contact-form .upload-box .file-list '
     };
     catchDom = function(st) {
       dom.body = $(st.body);
