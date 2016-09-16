@@ -73,14 +73,25 @@
     st = {};
     defaults = {
       body: 'body, html',
-      form: '.contact-form'
+      form: '.contact-form',
+      filebox: '.contact-form #fdrag',
+      fileinput: '.contact-form input[type=file]',
+      filelist: '.contact-form .upload-box .file-list'
     };
     catchDom = function(st) {
       dom.body = $(st.body);
       dom.form = $(st.form);
+      dom.filebox = $(st.filebox);
+      dom.fileinput = $(st.fileinput);
+      dom.filelist = $(st.filelist);
     };
     suscribeEvents = function() {
       dom.form.on('keyup', 'textarea', events.counterDescription);
+      dom.filebox.on('click', events.openFileInput);
+      dom.filebox.bind('dragover', events.fileDragHover);
+      dom.filebox.bind('dragleave', events.fileDragLeave);
+      dom.filebox.bind('drop', events.fileSelectHandler);
+      dom.fileinput.on('change', events.fileSelectHandler);
     };
     events = {
       initValidation: function() {
@@ -129,6 +140,33 @@
         } else {
           return $(this).val($(this).val().substring(0, 300));
         }
+      },
+      fileDragHover: function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        return $(this).addClass('dghover');
+      },
+      fileDragLeave: function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        return $(this).removeClass('dghover');
+      },
+      fileSelectHandler: function(e) {
+        var file, files, i, len, results;
+        e.stopPropagation();
+        e.preventDefault();
+        files = e.target.files || (e.originalEvent.dataTransfer && e.originalEvent.dataTransfer.files);
+        results = [];
+        for (i = 0, len = files.length; i < len; i++) {
+          file = files[i];
+          results.push($('<li/>', {
+            text: file.name
+          }).appendTo(dom.filelist));
+        }
+        return results;
+      },
+      openFileInput: function() {
+        return $(dom.fileinput).click();
       }
     };
     initialize = function(opts) {

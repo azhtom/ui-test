@@ -670,13 +670,32 @@ p {
   font-size: 16px;
   font-weight: 300;
   line-height: 3.9;
-  cursor: pointer;
 }
 #contact-form .input-group .input-field .field .upload-box span {
   text-decoration: underline;
+  cursor: pointer;
 }
 #contact-form .input-group .input-field .field .upload-box input[type=file] {
   display: none;
+}
+#contact-form .input-group .input-field .field .upload-box .dghover {
+  border: 1px dashed #e0e0e0;
+  padding: 0 0 0 10px;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+#contact-form .input-group .input-field .field .upload-box .file-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#contact-form .input-group .input-field .field .upload-box .file-list li {
+  padding: 0 0 0 10px;
+  margin: 0;
+  font-size: 12px;
 }
 #contact-form .input-group .input-field .field .counter {
   display: block;

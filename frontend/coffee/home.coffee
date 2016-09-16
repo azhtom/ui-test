@@ -66,12 +66,23 @@ contactForm = (->
     defaults =
         body : 'body, html'
         form : '.contact-form'
+        filebox: '.contact-form #fdrag'
+        fileinput: '.contact-form input[type=file]'
+        filelist: '.contact-form .upload-box .file-list'
     catchDom = (st) ->
         dom.body = $(st.body)
         dom.form = $(st.form)
+        dom.filebox = $(st.filebox)
+        dom.fileinput = $(st.fileinput)
+        dom.filelist = $(st.filelist)
         return
     suscribeEvents = ->
         dom.form.on 'keyup', 'textarea', events.counterDescription
+        dom.filebox.on 'click', events.openFileInput
+        dom.filebox.bind 'dragover', events.fileDragHover
+        dom.filebox.bind 'dragleave', events.fileDragLeave
+        dom.filebox.bind 'drop', events.fileSelectHandler
+        dom.fileinput.on 'change', events.fileSelectHandler
         return
     events =
         initValidation: () ->
@@ -113,7 +124,26 @@ contactForm = (->
                 $(this).parent().find('.counter').text("Faltan " + total + " caracteres")
             else
                 $(this).val($(this).val().substring(0, 300))
+        fileDragHover: (e) ->
+            e.stopPropagation()
+            e.preventDefault()
+            $(this).addClass('dghover')
+        fileDragLeave: (e) ->
+            e.stopPropagation()
+            e.preventDefault()
+            $(this).removeClass('dghover')
+        fileSelectHandler: (e) ->
+            e.stopPropagation()
+            e.preventDefault()
+            files = e.target.files or (e.originalEvent.dataTransfer and e.originalEvent.dataTransfer.files)
 
+            for file in files
+                $('<li/>', {
+                    text: file.name
+                }).appendTo(dom.filelist)
+
+        openFileInput: () ->
+            $(dom.fileinput).click()
 
     initialize = (opts) ->
         st = $.extend({}, defaults, opts)

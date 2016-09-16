@@ -99,7 +99,7 @@
                     <img src='/static/images/icons/point.png'> campos requeridos
                 </span>
             </div>
-            <form class='contact-form'>
+            <form class='contact-form' enctype="multipart/form-data">
                 <div class="input-group">
                     <div class="input-field">
                         <div class="field">
@@ -226,10 +226,12 @@
                                 </svg>
                             </div>
                             <div class="upload-box">
-                                <input type="file" />
-                                <div>
+                                <input type="file" name="files[]"  multiple="multiple"/>
+                                <div id="fdrag">
                                     <span>Agregue un archivo</span> o coloque archivos aquí
                                 </div>
+                                <ul class="file-list">
+                                </ul>
                             </div>
                         </div>
                     </div>
